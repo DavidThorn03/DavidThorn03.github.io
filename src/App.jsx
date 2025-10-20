@@ -113,10 +113,10 @@ const experienceData = {
       period: "Summer 2025",
       location: "Dublin, Ireland",
       type: "Internship",
-      shortDescription: "Developed .NET MAUI/WPF desktop application for Type 1 Diabetes monitoring with real-time glucose data integration.",
-      fullDescription: "Worked as a software development intern at Binary Worrier Ltd., focusing on healthcare technology solutions. Developed a comprehensive desktop application using .NET MAUI and WPF frameworks to help parents monitor their children's glucose levels in real-time. The application integrated with Dexcom CGM devices through secure OAuth2 authentication and displayed critical health data directly on the Windows 11 taskbar for easy access.",
+      shortDescription: "Developed .NET WPF desktop application for Type 1 Diabetes monitoring with real-time glucose data integration.",
+      fullDescription: "Worked as a software development intern at Binary Worrier Ltd., focusing on healthcare technology solutions. Developed a comprehensive desktop application using .NET WPF framework to help parents monitor their children's glucose levels in real-time. The application integrated with Dexcom CGM devices through secure OAuth2 authentication and displayed critical health data directly on the Windows 11 taskbar for easy access.",
       responsibilities: [
-        "Engineered a .NET MAUI/WPF desktop application for parents of children with Type 1 Diabetes to monitor real-time glucose data from Dexcom CGM devices",
+        "Engineered a .NET WPF desktop application for parents of children with Type 1 Diabetes to monitor real-time glucose data from Dexcom CGM devices",
         "Implemented OAuth2 integration with Dexcom APIs for secure data retrieval and authentication",
         "Evaluated multiple frontend frameworks and designed a WPF-based interface displaying glucose readings on Windows 11 taskbar with 48-hour historical data visualization",
         "Utilized Azure DevOps for project management, documentation, and progress tracking through structured ticket systems",
@@ -325,12 +325,12 @@ const AboutSection = ({ darkMode }) => (
           <div className={`p-6 ${darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-gray-200'} rounded-xl border hover:shadow-lg transition-shadow`}>
             <Code className="w-8 h-8 text-blue-600 mb-4" />
             <h4 className={`font-bold mb-2 ${darkMode ? 'text-white' : ''}`}>Languages</h4>
-            <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>Python, Java, C, Node.js, SQL, MongoDB, .NET</p>
+            <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>Python, Java, C, Node.js, SQL, MongoDB, C#</p>
           </div>
           <div className={`p-6 ${darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-gray-200'} rounded-xl border hover:shadow-lg transition-shadow`}>
             <Code className="w-8 h-8 text-purple-600 mb-4" />
             <h4 className={`font-bold mb-2 ${darkMode ? 'text-white' : ''}`}>Frameworks</h4>
-            <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>TensorFlow, PyTorch, React Native, Express.js, .NET MAUI</p>
+            <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>TensorFlow, PyTorch, React Native, Express.js, .NET, .NET MAUI</p>
           </div>
           <div className={`p-6 ${darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-gray-200'} rounded-xl border hover:shadow-lg transition-shadow`}>
             <Code className="w-8 h-8 text-pink-600 mb-4" />
