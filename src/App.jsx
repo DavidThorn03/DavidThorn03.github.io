@@ -1,6 +1,4 @@
 import { useState, useEffect } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { X, Github, Calendar, Code, Mail, Linkedin, Briefcase, GraduationCap, Award, User, ExternalLink, ChevronRight, Moon, Sun } from 'lucide-react';
 
@@ -22,7 +20,7 @@ const projectsData = {
         "Following CRISP-DM methodology for structured development",
         "Focus on model trustability for scientific applications"
       ],
-      github: "https://github.com/yourusername/galaxy-classifier",
+      github: "https://github.com/DavidThorn03/Galaxy-Classifier",
       date: "2025 (In Progress)",
       impact: "Aims to address the challenge of processing massive astronomical datasets while maintaining scientific rigor through trustable, explainable AI systems."
     },
@@ -42,7 +40,7 @@ const projectsData = {
         "Admin moderation system for flagged content"
       ],
       github: "https://github.com/DavidThorn03/Major-Group-Project",
-      date: "2024",
+      date: "2025",
       impact: "Provides students with a platform for peer learning and academic discussion, with robust safety features ensuring appropriate content."
     },
     {
@@ -61,7 +59,7 @@ const projectsData = {
         "Mathematical modeling of disease spread dynamics"
       ],
       github: "https://github.com/DavidThorn03/Parallel-Zombie-Simulation",
-      date: "2024",
+      date: "2025",
       impact: "Demonstrates practical application of parallel computing techniques to improve computational performance in simulation-based modeling."
     },
     {
@@ -80,7 +78,7 @@ const projectsData = {
         "Support for text encoding and binary code decoding"
       ],
       github: "https://github.com/DavidThorn03/Huffman-Encoding-Program",
-      date: "2023",
+      date: "2025",
       impact: "Demonstrates understanding of fundamental computer science concepts including data compression, tree structures, and algorithm optimization."
     },
     {
@@ -99,7 +97,7 @@ const projectsData = {
         "Comprehensive test suite with automated testing"
       ],
       github: "https://github.com/DavidThorn03/JSON-RPC-Project",
-      date: "2024",
+      date: "2025",
       impact: "Demonstrates practical knowledge of distributed systems design, network protocols, and building resilient, fault-tolerant systems."
     }
   ]
@@ -112,7 +110,7 @@ const experienceData = {
       id: 1,
       title: "Software Development Intern",
       company: "Binary Worrier Ltd.",
-      period: "Summer 2024",
+      period: "Summer 2025",
       location: "Dublin, Ireland",
       type: "Internship",
       shortDescription: "Developed .NET MAUI/WPF desktop application for Type 1 Diabetes monitoring with real-time glucose data integration.",
@@ -138,7 +136,7 @@ const experienceData = {
       company: "TU Dublin",
       period: "2024",
       location: "Dublin, Ireland",
-      type: "Part-Time",
+      type: "Full-Time",
       shortDescription: "Provided one-on-one programming tutoring and created educational content for Java programming students.",
       fullDescription: "Served as a student tutor at TU Dublin, helping fellow students improve their programming skills and prepare for examinations. Created educational content including video tutorials on complex programming concepts, with a focus on Java error handling and exception management. Mentored students individually, helping them develop strong problem-solving approaches and debugging techniques essential for software development.",
       responsibilities: [
@@ -154,6 +152,29 @@ const experienceData = {
         "Developed effective teaching methods that simplified complex programming concepts"
       ],
       skills: ["Teaching", "Communication", "Java Programming", "Mentoring", "Content Creation"]
+    },
+    {
+      id: 3,
+      title: "LC Grinds Tutor",
+      company: "Self-Employed",
+      period: "2025",
+      location: "Newbridge, Kildare, Ireland",
+      type: "Part-Time",
+      shortDescription: "Provided tutoring for secondary school students in mathematics.",
+      fullDescription: "As an LC Grinds Tutor, I offered personalized tutoring sessions for Leaving Cert students in mathematics. I developed tailored lesson plans to address individual student needs and learning styles, helping them build confidence and improve their academic performance.",
+      responsibilities: [
+        "Conducted tutoring sessions for students in mathematics",
+        "Created customized lesson plans based on individual student needs",
+        "Monitored student progress and provided constructive feedback",
+        "Assisted students in exam preparation and study techniques",
+        "Fostered a positive and engaging learning environment"
+      ],
+      technologies: ["Teams", "Kahoot", "Quizlet"],
+      achievements: [
+        "Helped students achieve significant improvements in their grades",
+        "Received positive feedback from students and parents for effective teaching methods"
+      ],
+      skills: ["Mathematics", "Communication", "Adaptability"]
     }
   ]
 };
