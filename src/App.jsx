@@ -7,25 +7,64 @@ const projectsData = {
   projects: [
     {
       id: 1,
-      title: "Galaxy Morphology Classifier (In Development)",
+      title: "Hierarchical Galaxy Morphology Classification System (In progress)",
       category: "Machine Learning & AI",
-      technologies: ["Python", "TensorFlow", "PyTorch", "Computer Vision", "CRISP-DM"],
-      shortDescription: "Planned hierarchical ML model for galaxy classification with uncertainty quantification and explainability features for enhanced trustability.",
-      fullDescription: "An advanced machine learning project currently in development that will implement a hierarchical classification system for galaxy morphology using the Hubble sequence. The planned implementation includes uncertainty quantification to provide confidence scores with predictions and explainability techniques (SHAP) to understand feature importance. Following the CRISP-DM methodology for structured ML development, this project aims to address the critical challenge of model trustability in scientific applications.",
+      technologies: ["Python", "Jupyter Notebook", "PyTorch", "Computer Vision", "CRISP-DM"],
+      shortDescription: "Hierarchical deep learning system classifying galaxies into their morphological types, addressing data processing challenges in atronomy",
+      fullDescription: "An advanced hierarchical classification system designed to automate galaxy morphology classification following the Hubble sequence taxonomy. Built using transfer learning with ResNet-18 for feature extraction and custom multi-level classifier heads, the system processes 4,458 professionally-labeled astronomical images from the EFIGI catalogue. Implements three architectural approaches: flat baseline, classifier-per-level, and classifier-per-node, with the hierarchical per-node architecture achieving superior performance particularly on severely underrepresented classes. The project demonstrates end-to-end ML pipeline development following modified CRISP-DM methodology, addressing real-world challenges of extreme class imbalance and enabling automated processing of millions of unlabeled galaxy images in modern astronomical surveys.",
       highlights: [
-        "Planned hierarchical model structure for main categories and subcategories",
-        "Will implement uncertainty quantification for prediction confidence",
-        "Planned SHAP explainability for feature importance analysis",
-        "Convolutional Neural Networks for image classification",
-        "Following CRISP-DM methodology for structured development",
-        "Focus on model trustability for scientific applications"
+        "mplemented three model variants: flat baseline, classifier-per-level, and classifier-per-node",
+        "75% macro F1 (fine-grained) 84% hierarchical macro F1, 96% accuracy (coarse-level) using classifier-per-node",
+        "Improved rarest class from 46% to 75% F1 through hierarchical architecture",
+        "ResNet-18 transfer learning with ImageNet pretraining, fine-tuned on EFIGI galaxy images",
+        "Custom hierarchical loss with balanced class weights addressing <1% representation",
+        "Data augmentation: 360° rotation, horizontal/vertical flips preserving morphology",
+        "Train/val/test split: 3,120/445/891 images with stratified sampling"
       ],
       github: "https://github.com/DavidThorn03/Galaxy-Classifier",
       date: "2025 (In Progress)",
-      impact: "Aims to address the challenge of processing massive astronomical datasets while maintaining scientific rigor through trustable, explainable AI systems."
+      impact: "Enables scalable processing of astronomical survey data with accuracy comparable to domain experts, supporting research into galactic evolution and universe composition. Demonstrates handling of hierarchical classification problems with extreme class imbalance applicable to other domains."
     },
     {
       id: 2,
+      title: "Heart Disease Prediction Model",
+      category: "Machine Learning",
+      technologies: ["Python", "scikit-learn", "Random Forest", "R", "pandas", "NumPy"],
+      shortDescription: "Random Forest classifier achieving 95% recall for heart disease diagnosis through optimized feature selection and data preparation.",
+      fullDescription: "A comprehensive machine learning system for medical diagnosis using Random Forest classification on 1,080 patient records with 19 clinical features. The project demonstrates end-to-end ML pipeline development following CRISP-DM methodology, from exploratory data analysis in R through model deployment. Implemented rigorous data quality controls including outlier removal, missing value handling, and feature engineering. Applied statistical analysis to identify 8 key diagnostic indicators, reducing required patient tests by half while improving model recall by 6 percentage points over baseline.",
+      highlights: [
+        "95% positive recall (6% improvement over baseline) minimizing dangerous false negatives",
+        "Comprehensive EDA in R with statistical analysis and visualization across 19 features",
+        "Feature selection reduced required clinical tests from 16 to 8 based on information gain",
+        "Hyperparameter optimization via GridSearchCV across 5 parameters with custom recall scoring",
+        "50% model size reduction while maintaining performance through n_estimators tuning",
+        "Identified age, gender, chest pain type, thalassemia, max heart rate, vessels coloured, peak ST depression and slope of ST values as strongest predictors"
+      ],
+      github: "https://github.com/DavidThorn03/Heart-Disease-Model",
+      date: "2025",
+      impact: "Demonstrates ability to build production-ready medical ML systems with explainable decisions and optimized patient experience through reduced testing requirements."
+    },
+    {
+      id: 3,
+      title: "Natural Language Parser",
+      category: "Computational Linguistics",
+      technologies: ["Java", "Recursive Algorithms", "Tree Data Structures", "OOP"],
+      shortDescription: "Recursive descent parser implementing context-free grammar validation and morphological agreement checking for English sentences.",
+      fullDescription: "A Java-based natural language parser that validates sentence structure using context-free grammar rules and enforces subject-verb number agreement through two-stage validation. The system implements a depth-first search algorithm to recursively construct syntactic parse trees, matching input tokens against hierarchical grammar rules (S → NP VP, VP → VB NP). Distinguishes between person nouns (subject position) and object nouns (object position) while enforcing determiner-noun and subject-verb agreement. The parser successfully processes 16 grammatical sentence variations following the pattern 'The/A king(s) like(s)/dislike(s) the new cat' while correctly rejecting violations such as wrong noun types, number disagreement, and structural errors.",
+      highlights: [
+        "Recursive descent parser using depth-first tree search for grammar validation",
+        "Two-stage validation: syntactic structure checking + morphological agreement verification",
+        "Hierarchical grammar system with 5 phrase structure rules and 6 POS categories",
+        "Custom TreeNode implementation generating bracketed phrase notation and visual trees",
+        "Modular OOP design with external configuration files (lexicon.txt, rules.txt)",
+        "100% accuracy on 16 valid sentences, correctly rejecting all invalid constructions"
+      ],
+      github: "https://github.com/DavidThorn03/Natural-Language-Parser",
+      date: "2025",
+      impact: "Demonstrates foundational NLP concepts and compiler design principles applicable to language processing systems, syntax checkers, and automated grammar correction tools."
+    },
+    {
+      id: 4,
       title: "ThreadUD - Academic Forum Platform",
       category: "Full-Stack Development",
       technologies: ["React Native", "Node.js", "Express", "MongoDB", "Socket.io"],
@@ -44,7 +83,7 @@ const projectsData = {
       impact: "Provides students with a platform for peer learning and academic discussion, with robust safety features ensuring appropriate content."
     },
     {
-      id: 3,
+      id: 5,
       title: "Zombie Apocalypse Simulation - HPC Project",
       category: "High-Performance Computing",
       technologies: ["C", "Pthreads", "Parallel Computing", "Mathematical Modeling"],
@@ -63,7 +102,7 @@ const projectsData = {
       impact: "Demonstrates practical application of parallel computing techniques to improve computational performance in simulation-based modeling."
     },
     {
-      id: 4,
+      id: 6,
       title: "Huffman Encoding System",
       category: "Algorithms & Data Structures",
       technologies: ["Java", "Swing", "Data Structures", "Algorithm Design"],
@@ -82,7 +121,7 @@ const projectsData = {
       impact: "Demonstrates understanding of fundamental computer science concepts including data compression, tree structures, and algorithm optimization."
     },
     {
-      id: 5,
+      id: 7,
       title: "Distributed Server Network",
       category: "Distributed Systems",
       technologies: ["Python", "JSON-RPC", "Network Programming", "System Design"],
