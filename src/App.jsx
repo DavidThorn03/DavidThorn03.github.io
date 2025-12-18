@@ -321,7 +321,7 @@ const AboutSection = ({ darkMode }) => (
         <div>
           <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed mb-6`}>
             Fourth-year Computing student with a passion for data science, machine learning, and artificial intelligence.
-            Experienced in full-stack development, distributed computing, and high-performance computing through academic
+            Experienced in data analytics, computer vision systems, full-stack development, distributed computing, and high-performance computing through academic
             projects, professional internships, and tutoring roles.
           </p>
           <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed`}>
@@ -364,17 +364,17 @@ const AboutSection = ({ darkMode }) => (
           <div className={`p-6 ${darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-gray-200'} rounded-xl border hover:shadow-lg transition-shadow`}>
             <Code className="w-8 h-8 text-blue-600 mb-4" />
             <h4 className={`font-bold mb-2 ${darkMode ? 'text-white' : ''}`}>Languages</h4>
-            <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>Python, Java, C, Node.js, SQL, MongoDB, C#</p>
+            <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>Python, Java, C, R, Node.js, SQL, MongoDB, C#</p>
           </div>
           <div className={`p-6 ${darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-gray-200'} rounded-xl border hover:shadow-lg transition-shadow`}>
             <Code className="w-8 h-8 text-purple-600 mb-4" />
             <h4 className={`font-bold mb-2 ${darkMode ? 'text-white' : ''}`}>Frameworks</h4>
-            <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>TensorFlow, PyTorch, React Native, Express.js, .NET, .NET MAUI</p>
+            <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>PyTorch, TensorFlow, Scikit-Learn, React Native, Express.js, .NET, .NET MAUI</p>
           </div>
           <div className={`p-6 ${darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-gray-200'} rounded-xl border hover:shadow-lg transition-shadow`}>
             <Code className="w-8 h-8 text-pink-600 mb-4" />
             <h4 className={`font-bold mb-2 ${darkMode ? 'text-white' : ''}`}>Specializations</h4>
-            <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>ML, HPC, Distributed Systems, Full-Stack Development</p>
+            <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>ML, Computer Vision, HPC, Distributed Systems, Full-Stack Development</p>
           </div>
         </div>
       </div>
