@@ -493,7 +493,7 @@ const ProjectCard = ({ project, onClick, darkMode }) => (
       </p>
 
       <div className="flex flex-wrap gap-2 mb-6">
-        {project.technologies.map((tech, idx) => (
+        {project.technologies.slice(0, 4).map((tech, idx) => (
           <span key={idx} className={`text-xs px-2 py-1 ${darkMode ? 'bg-slate-700 text-gray-300' : 'bg-gray-50 text-gray-600'} rounded`}>
             {tech}
           </span>
