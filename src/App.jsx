@@ -46,25 +46,6 @@ const projectsData = {
     },
     {
       id: 3,
-      title: "Natural Language Parser",
-      category: "Computational Linguistics",
-      technologies: ["Java", "Recursive Algorithms", "Tree Data Structures", "OOP"],
-      shortDescription: "Recursive descent parser implementing context-free grammar validation and morphological agreement checking for English sentences.",
-      fullDescription: "A Java-based natural language parser that validates sentence structure using context-free grammar rules and enforces subject-verb number agreement through two-stage validation. The system implements a depth-first search algorithm to recursively construct syntactic parse trees, matching input tokens against hierarchical grammar rules (S → NP VP, VP → VB NP). Distinguishes between person nouns (subject position) and object nouns (object position) while enforcing determiner-noun and subject-verb agreement. The parser successfully processes 16 grammatical sentence variations following the pattern 'The/A king(s) like(s)/dislike(s) the new cat' while correctly rejecting violations such as wrong noun types, number disagreement, and structural errors.",
-      highlights: [
-        "Recursive descent parser using depth-first tree search for grammar validation",
-        "Two-stage validation: syntactic structure checking + morphological agreement verification",
-        "Hierarchical grammar system with 5 phrase structure rules and 6 POS categories",
-        "Custom TreeNode implementation generating bracketed phrase notation and visual trees",
-        "Modular OOP design with external configuration files (lexicon.txt, rules.txt)",
-        "100% accuracy on 16 valid sentences, correctly rejecting all invalid constructions"
-      ],
-      github: "https://github.com/DavidThorn03/Natural-Language-Parser",
-      date: "2025",
-      impact: "Demonstrates foundational NLP concepts and compiler design principles applicable to language processing systems, syntax checkers, and automated grammar correction tools."
-    },
-    {
-      id: 4,
       title: "ThreadUD - Academic Forum Platform",
       category: "Full-Stack Development",
       technologies: ["React Native", "Node.js", "Express", "MongoDB", "Socket.io"],
@@ -83,7 +64,7 @@ const projectsData = {
       impact: "Provides students with a platform for peer learning and academic discussion, with robust safety features ensuring appropriate content."
     },
     {
-      id: 5,
+      id: 4,
       title: "Zombie Apocalypse Simulation - HPC Project",
       category: "High-Performance Computing",
       technologies: ["C", "Pthreads", "Parallel Computing", "Mathematical Modeling"],
@@ -100,6 +81,25 @@ const projectsData = {
       github: "https://github.com/DavidThorn03/Parallel-Zombie-Simulation",
       date: "2025",
       impact: "Demonstrates practical application of parallel computing techniques to improve computational performance in simulation-based modeling."
+    },
+    {
+      id: 5,
+      title: "Natural Language Parser",
+      category: "Computational Linguistics",
+      technologies: ["Java", "Recursive Algorithms", "Tree Data Structures", "OOP"],
+      shortDescription: "Recursive descent parser implementing context-free grammar validation and morphological agreement checking for English sentences.",
+      fullDescription: "A Java-based natural language parser that validates sentence structure using context-free grammar rules and enforces subject-verb number agreement through two-stage validation. The system implements a depth-first search algorithm to recursively construct syntactic parse trees, matching input tokens against hierarchical grammar rules (S → NP VP, VP → VB NP). Distinguishes between person nouns (subject position) and object nouns (object position) while enforcing determiner-noun and subject-verb agreement. The parser successfully processes 16 grammatical sentence variations following the pattern 'The/A king(s) like(s)/dislike(s) the new cat' while correctly rejecting violations such as wrong noun types, number disagreement, and structural errors.",
+      highlights: [
+        "Recursive descent parser using depth-first tree search for grammar validation",
+        "Two-stage validation: syntactic structure checking + morphological agreement verification",
+        "Hierarchical grammar system with 5 phrase structure rules and 6 POS categories",
+        "Custom TreeNode implementation generating bracketed phrase notation and visual trees",
+        "Modular OOP design with external configuration files (lexicon.txt, rules.txt)",
+        "100% accuracy on 16 valid sentences, correctly rejecting all invalid constructions"
+      ],
+      github: "https://github.com/DavidThorn03/Natural-Language-Parser",
+      date: "2025",
+      impact: "Demonstrates foundational NLP concepts and compiler design principles applicable to language processing systems, syntax checkers, and automated grammar correction tools."
     },
     {
       id: 6,
