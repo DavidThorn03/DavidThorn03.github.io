@@ -7,26 +7,53 @@ const projectsData = {
   projects: [
     {
       id: 1,
-      title: "Hierarchical Galaxy Morphology Classification System (In progress)",
-      category: "Machine Learning & AI",
-      technologies: ["Python", "Jupyter Notebook", "PyTorch", "Computer Vision", "CRISP-DM"],
-      shortDescription: "Hierarchical deep learning system classifying galaxies into their morphological types, addressing data processing challenges in atronomy",
-      fullDescription: "An advanced hierarchical classification system designed to automate galaxy morphology classification following the Hubble sequence taxonomy. Built using transfer learning with ResNet-18 for feature extraction and custom multi-level classifier heads, the system processes 4,458 professionally-labeled astronomical images from the EFIGI catalogue. Implements three architectural approaches: flat baseline, classifier-per-level, and classifier-per-node, with the hierarchical per-node architecture achieving superior performance particularly on severely underrepresented classes. The project demonstrates end-to-end ML pipeline development following modified CRISP-DM methodology, addressing real-world challenges of extreme class imbalance and enabling automated processing of millions of unlabeled galaxy images in modern astronomical surveys.",
+      title: "Hierarchical Galaxy Classifier with Explainability",
+      category: "Deep Learning / Computer Vision / Explainable AI",
+      technologies: ["Python", "PyTorch", "timm", "torchvision", "scikit-learn", "NumPy", "pandas", "matplotlib", "seaborn", "OpenCV", "SEP", "UMAP", "Grad-CAM", "ConvNeXtV2 Nano", "ResNet18", "Random Forest", "Decision Trees", "Support Vector Classifiers"],
+      shortDescription: "Final-year thesis project building a hierarchical deep learning system for galaxy morphology classification, improving fine macro F1 from 0.6893 to 0.7695 with explainability analysis.",
+      fullDescription: "A final-year thesis project focused on classifying galaxy morphology using deep learning, hierarchical classification, and explainable AI. The system classifies galaxies into broad morphology groups and finer Hubble-sequence subtypes using the professionally labelled EFIGI dataset. The project compared flat and hierarchical classification architectures, evaluated multiple image preprocessing methods, tested pretrained CNN backbones through timm, and implemented class imbalance strategies including class weights, focal loss, weighted random sampling, and balanced batch sampling. The final model used a ConvNeXtV2 Nano backbone, object extraction, advanced augmentation, balanced batch sampling, and hierarchical classifier heads combined through joint probabilities. Explainability analysis was carried out using confidence thresholds, model disagreement analysis, UMAP feature-space visualisation, and Grad-CAM heatmaps to assess model trustworthiness and understand difficult classifications.",
       highlights: [
-        "mplemented three model variants: flat baseline, classifier-per-level, and classifier-per-node",
-        "75% macro F1 (fine-grained) 84% hierarchical macro F1, 96% accuracy (coarse-level) using classifier-per-node",
-        "Improved rarest class from 46% to 75% F1 through hierarchical architecture",
-        "ResNet-18 transfer learning with ImageNet pretraining, fine-tuned on EFIGI galaxy images",
-        "Custom hierarchical loss with balanced class weights addressing <1% representation",
-        "Data augmentation: 360° rotation, horizontal/vertical flips preserving morphology",
-        "Train/val/test split: 3,120/445/891 images with stratified sampling"
+        "Developed a full deep learning research pipeline for galaxy morphology classification as a final-year thesis project",
+        "Selected the EFIGI dataset for its professional labelling, detailed morphology classes, and suitability for hierarchical classification",
+        "Improved fine macro F1 from a 0.6893 flat ResNet18 baseline to 0.7695 using a hierarchical ConvNeXtV2 Nano model",
+        "Achieved 0.8521 coarse macro F1 for broad galaxy morphology classification",
+        "Demonstrated that hierarchical classification outperformed flat classification by 0.0381 fine macro F1",
+        "Used object extraction with SEP to isolate galaxy structures and improve macro F1 by 0.025 over no preprocessing",
+        "Tested preprocessing strategies including raw RGB images, greyscale conversion, object extraction, morphological operations, and colour-preserving augmentation",
+        "Found that colour information was important for classification, with greyscale and colour-altering methods reducing performance",
+        "Compared pretrained ResNet18 and ConvNeXtV2 Nano backbones loaded through timm",
+        "Tested neural network classifier heads, Random Forests, Decision Trees, Support Vector Classifiers, regression-based subclass prediction, and hierarchical classifier-per-parent-node designs",
+        "Used balanced batch sampling to improve class imbalance handling, particularly for underrepresented galaxy classes",
+        "Applied confidence thresholding, model disagreement analysis, UMAP, and Grad-CAM to evaluate model trustworthiness and interpretability",
+        "Showed that higher model confidence generally correlated with stronger accuracy and F1 performance, with confidence thresholds helping identify more reliable predictions"
       ],
-      github: "https://github.com/DavidThorn03/Galaxy-Classifier",
-      date: "2025 (In Progress)",
-      impact: "Enables scalable processing of astronomical survey data with accuracy comparable to domain experts, supporting research into galactic evolution and universe composition. Demonstrates handling of hierarchical classification problems with extreme class imbalance applicable to other domains."
+      github: "https://github.com/DavidThorn03/Hierarchical-Galaxy-Classifier.git",
+      date: "2025–2026",
+      impact: "Demonstrates advanced applied machine learning research across computer vision, scientific data, hierarchical modelling, class imbalance handling, pretrained deep learning, and explainable AI. This is the strongest portfolio project for ML engineering, data science, and applied AI roles."
     },
     {
       id: 2,
+      title: "Pneumonia X-Ray Classification",
+      category: "Deep Learning / Computer Vision",
+      technologies: ["Python", "TensorFlow", "Keras", "scikit-learn", "NumPy", "matplotlib", "seaborn", "CNNs", "Grad-CAM", "EfficientNetB0"],
+      shortDescription: "CNN-based medical image classification system for detecting normal, bacterial pneumonia, and viral pneumonia cases from chest X-rays.",
+      fullDescription: "A deep learning computer vision project focused on classifying chest X-ray images into normal, bacterial pneumonia, or viral pneumonia categories. The project explored the full CNN development process, including baseline modelling, image preprocessing, augmentation, class imbalance handling, architecture tuning, transfer learning comparison, and explainability. The final custom CNN used greyscale 128x128 images, data augmentation, class weights, three convolutional blocks, dropout, and early stopping to improve generalisation and sick-patient recall. EfficientNetB0 transfer learning was also tested but underperformed compared to the custom model. Grad-CAM heatmaps were used to analyse model attention and assess whether predictions were based on medically relevant image regions.",
+      highlights: [
+        "Improved test accuracy from 74.8% baseline to 82.6% with a custom CNN architecture",
+        "Improved macro F1 from 0.737 to 0.829 through preprocessing, augmentation, class weighting, and architecture tuning",
+        "Trained on 5,419 chest X-ray images and evaluated on 438 test images across normal, bacterial, and viral classes",
+        "Used data augmentation including horizontal flips, small rotations, and zooming to reduce overfitting",
+        "Converted X-rays to greyscale to reduce input complexity while maintaining performance",
+        "Applied class weighting to improve viral pneumonia recall from 0.580 to 0.802 during experimentation",
+        "Compared custom CNN architecture against EfficientNetB0 transfer learning, with the custom model performing better",
+        "Used Grad-CAM visualisations to inspect model attention and improve interpretability"
+      ],
+      github: "https://github.com/DavidThorn03/Pneumonia-CV-Classificaition.git",
+      date: "2026",
+      impact: "Demonstrates deep learning, medical image classification, CNN experimentation, model evaluation, class imbalance handling, and explainable AI techniques for high-stakes healthcare-related computer vision tasks."
+    },
+    {
+      id: 3,
       title: "Heart Disease Prediction Model",
       category: "Machine Learning",
       technologies: ["Python", "scikit-learn", "Random Forest", "R", "pandas", "NumPy"],
@@ -45,7 +72,67 @@ const projectsData = {
       impact: "Demonstrates ability to build production-ready medical ML systems with explainable decisions and optimized patient experience through reduced testing requirements."
     },
     {
-      id: 3,
+      id: 4,
+      title: "Chat Sentiment Analysis Classifier",
+      category: "Machine Learning / NLP",
+      technologies: ["Python", "scikit-learn", "pandas", "NumPy", "TF-IDF", "LinearSVC", "GridSearchCV", "KMeans", "NetworkX", "WordCloud", "matplotlib", "seaborn", "Jupyter Notebook"],
+      shortDescription: "NLP sentiment classification pipeline for short chat messages, achieving 0.87 F1 through TF-IDF vectorisation, custom preprocessing, feature selection, and LinearSVC tuning.",
+      fullDescription: "A supervised machine learning project for classifying short chat messages as positive, negative, or neutral. The project demonstrates an end-to-end applied NLP workflow, including dataset quality assessment, duplicate removal, exploratory text analysis, vectorisation comparison, custom stop-word selection, feature selection, and hyperparameter tuning. Compared Count, TF, and TF-IDF vectorisation methods before selecting TF-IDF as the strongest representation. Built a custom token informativeness metric using class occurrence ratios and token support to identify low-value stop words and sentiment-bearing terms. Tested unigram, bigram, and targeted phrase handling, retaining the key neutral phrase 'not sure' as a custom token without adding unnecessary feature complexity. Evaluated Chi2, ANOVA, and embedded LinearSVC feature selection, with embedded selection providing the strongest performance and reducing the feature space to 307 tokens.",
+      highlights: [
+        "Achieved 0.87 final F1 score, improving from a 0.84 TF-IDF baseline",
+        "Built a full NLP classification workflow for 584 labelled chat messages across positive, negative, and neutral classes",
+        "Removed 38 duplicate records and handled noisy short-text features including emojis, punctuation, URLs, special characters, and inconsistent casing",
+        "Compared Count, TF, and TF-IDF vectorisation, with TF-IDF producing the strongest baseline performance",
+        "Designed a custom stop-word scoring method based on token support and class occurrence ratios",
+        "Tested full bigram vectorisation and selected a targeted custom phrase approach to avoid unnecessary feature expansion",
+        "Reduced the feature space from 822 to 307 tokens using embedded LinearSVC feature selection",
+        "Used GridSearchCV to tune LinearSVC hyperparameters including C, loss, and class weight",
+        "Used word clouds, token frequency analysis, bigram networks, emoji analysis, and KMeans clustering to support data understanding"
+      ],
+      github: "https://github.com/DavidThorn03/Sentiment-Analysis.git",
+      date: "2026",
+      impact: "Demonstrates applied NLP, data science experimentation, and ML engineering pipeline development, with emphasis on preprocessing decisions, feature selection, model evaluation, and interpretable performance improvement."
+    },
+    {
+      id: 5,
+      title: "Jenkins CI/CD Pipeline for FastAPI",
+      category: "DevOps / MLOps Foundations",
+      technologies: ["Python", "FastAPI", "Jenkins", "Docker", "Postman", "Uvicorn", "Pytest", "REST APIs", "CI/CD"],
+      shortDescription: "CI/CD project for a FastAPI application using Jenkins, Docker, Postman tests, build artifacts, and pipeline monitoring.",
+      fullDescription: "A software engineering and DevOps project focused on building an automated CI/CD workflow for a FastAPI application. The project included developing product-based REST API endpoints, validating responses with unit and Postman tests, containerising the application with Docker, and automating the full workflow through a Jenkins pipeline. The pipeline cloned the repository, installed dependencies, created configuration files, built and ran the Docker container, executed tests, stopped the container, and archived a zipped build artifact. Jenkins monitoring plugins were also used to inspect build status, test results, stage-level execution, CPU usage, memory usage, and queued builds.",
+      highlights: [
+        "Built a FastAPI service with endpoints for product retrieval, filtering, pagination, creation, deletion, and currency conversion",
+        "Created Postman tests to validate API status codes, response bodies, and JSON structures",
+        "Containerised the application with Docker and served it through Uvicorn on port 8000",
+        "Automated the workflow using Jenkins pipeline stages for cloning, dependency installation, Docker build, container execution, testing, cleanup, and artifact creation",
+        "Generated zipped build artifacts from successful Jenkins runs",
+        "Used Jenkins monitoring plugins to track build results, test statistics, system usage, and stage-level pipeline performance"
+      ],
+      github: "https://github.com/DavidThorn03/Web-Services-Jenkins-Postman.git",
+      date: "2026",
+      impact: "Demonstrates practical CI/CD, API testing, containerisation, and deployment workflow knowledge relevant to ML engineering and MLOps roles."
+    },
+    {
+      id: 6,
+      title: "O-Ring Fault Detection System",
+      category: "Computer Vision",
+      technologies: ["Python", "OpenCV", "NumPy", "matplotlib", "Jupyter Notebook"],
+      shortDescription: "Classical computer vision pipeline for detecting faulty O-rings using manually implemented thresholding, morphology, segmentation, and geometric analysis.",
+      fullDescription: "A computer vision inspection system designed to detect faults in O-rings without using CNNs or conventional machine learning classifiers. The project focuses on understanding core image processing algorithms by manually implementing key stages of the pipeline, including Otsu thresholding, binary morphology, connected component segmentation, object extraction, and rule-based geometric fault detection. The system identifies cut rings and malformed or missing sections by analysing ring continuity and local width variation.",
+      highlights: [
+        "Correctly classified all 15 O-ring images in the test set, including 8 faulty and 7 non-faulty examples",
+        "Implemented a full classical computer vision pipeline without using trained ML or CNN-based classification",
+        "Built manual Otsu thresholding, binary morphology, connected component segmentation, and ring extraction logic",
+        "Detected multiple fault types, including cut rings and missing or malformed ring sections",
+        "Used geometric analysis of ring width and radial continuity to identify visual defects",
+        "Generated annotated output images showing pass/fail status and detected fault type"
+      ],
+      github: "https://github.com/DavidThorn03/Oring-fault-detection-CV.git",
+      date: "2026",
+      impact: "Demonstrates practical understanding of computer vision fundamentals, algorithm design, and interpretable rule-based image inspection without relying on black-box deep learning models."
+    },
+    {
+      id: 7,
       title: "ThreadUD - Academic Forum Platform",
       category: "Full-Stack Development",
       technologies: ["React Native", "Node.js", "Express", "MongoDB", "Socket.io"],
@@ -64,7 +151,7 @@ const projectsData = {
       impact: "Provides students with a platform for peer learning and academic discussion, with robust safety features ensuring appropriate content."
     },
     {
-      id: 4,
+      id: 8,
       title: "Zombie Apocalypse Simulation - HPC Project",
       category: "High-Performance Computing",
       technologies: ["C", "Pthreads", "Parallel Computing", "Mathematical Modeling"],
@@ -83,7 +170,26 @@ const projectsData = {
       impact: "Demonstrates practical application of parallel computing techniques to improve computational performance in simulation-based modeling."
     },
     {
-      id: 5,
+      id: 9,
+      title: "Distributed Server Network",
+      category: "Distributed Systems",
+      technologies: ["Python", "JSON-RPC", "Network Programming", "System Design"],
+      shortDescription: "JSON-RPC based distributed server system with dynamic startup/shutdown, heartbeat monitoring, and message passing between nodes.",
+      fullDescription: "A distributed computing system implementing multiple server nodes that can communicate using JSON-RPC protocol. Features include dynamic server startup and shutdown, friend list management for server discovery, heartbeat monitoring for fault detection, and message passing across the network. The system demonstrates understanding of distributed systems concepts including service discovery, fault tolerance, and inter-process communication.",
+      highlights: [
+        "JSON-RPC implementation for remote procedure calls",
+        "Dynamic server discovery and friend list management",
+        "Heartbeat mechanism for monitoring server health",
+        "Message passing system across distributed nodes",
+        "Remote file operations and version checking",
+        "Comprehensive test suite with automated testing"
+      ],
+      github: "https://github.com/DavidThorn03/JSON-RPC-Project",
+      date: "2025",
+      impact: "Demonstrates practical knowledge of distributed systems design, network protocols, and building resilient, fault-tolerant systems."
+    },
+    {
+      id: 10,
       title: "Natural Language Parser",
       category: "Computational Linguistics",
       technologies: ["Java", "Recursive Algorithms", "Tree Data Structures", "OOP"],
@@ -102,7 +208,7 @@ const projectsData = {
       impact: "Demonstrates foundational NLP concepts and compiler design principles applicable to language processing systems, syntax checkers, and automated grammar correction tools."
     },
     {
-      id: 6,
+      id: 11,
       title: "Huffman Encoding System",
       category: "Algorithms & Data Structures",
       technologies: ["Java", "Swing", "Data Structures", "Algorithm Design"],
@@ -119,25 +225,6 @@ const projectsData = {
       github: "https://github.com/DavidThorn03/Huffman-Encoding-Program",
       date: "2025",
       impact: "Demonstrates understanding of fundamental computer science concepts including data compression, tree structures, and algorithm optimization."
-    },
-    {
-      id: 7,
-      title: "Distributed Server Network",
-      category: "Distributed Systems",
-      technologies: ["Python", "JSON-RPC", "Network Programming", "System Design"],
-      shortDescription: "JSON-RPC based distributed server system with dynamic startup/shutdown, heartbeat monitoring, and message passing between nodes.",
-      fullDescription: "A distributed computing system implementing multiple server nodes that can communicate using JSON-RPC protocol. Features include dynamic server startup and shutdown, friend list management for server discovery, heartbeat monitoring for fault detection, and message passing across the network. The system demonstrates understanding of distributed systems concepts including service discovery, fault tolerance, and inter-process communication.",
-      highlights: [
-        "JSON-RPC implementation for remote procedure calls",
-        "Dynamic server discovery and friend list management",
-        "Heartbeat mechanism for monitoring server health",
-        "Message passing system across distributed nodes",
-        "Remote file operations and version checking",
-        "Comprehensive test suite with automated testing"
-      ],
-      github: "https://github.com/DavidThorn03/JSON-RPC-Project",
-      date: "2025",
-      impact: "Demonstrates practical knowledge of distributed systems design, network protocols, and building resilient, fault-tolerant systems."
     }
   ]
 };
