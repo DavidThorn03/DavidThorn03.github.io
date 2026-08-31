@@ -33,6 +33,120 @@ const projectsData = {
     },
     {
       id: 2,
+
+      title: "Regulatory Data Validation & Automation Engine",
+
+      category: "Data Automation / Data Quality / Enterprise IT",
+
+      technologies: [
+        "Excel",
+        "Office Scripts",
+        "Power Automate",
+        "Power BI"
+      ],
+
+      shortDescription: "Developed a metadata-driven data validation and automation framework using Excel, Office Scripts and Power Automate to perform reusable reporting and data-quality checks.",
+
+      fullDescription: "A data-quality and automation project developed during my IT internship at Mediolanum. The solution used Excel as the configuration and results interface, Office Scripts as the execution layer, and Power Automate to orchestrate file processing and validation. Rather than implementing each check as separate hard-coded logic, the framework used metadata to define validation rules, parameters, fields, filters, comparison settings and execution behaviour. This allowed reusable validation methods to be applied across different reporting scenarios while keeping configuration separate from implementation. I developed and refined validation methods, consolidated overlapping logic, improved parameter validation and debugging, and tested the framework against representative reporting files. The wider workflow handled file selection and processing through SharePoint and OneDrive, executed the required scripts and produced structured findings for review. I also created technical handover documentation, user guidance and metadata definitions to support future maintenance and extension of the solution.",
+
+      highlights: [
+
+        "Designed and developed a metadata-driven validation framework using Excel, Office Scripts and Power Automate",
+
+        "Separated validation configuration and business rules from reusable implementation logic to improve maintainability and extensibility",
+
+        "Implemented reusable validation methods covering conditional requirements, cross-column and cross-row comparisons, cross-template reconciliation, aggregation and reporting-period comparisons",
+
+        "Supported tolerance-based numerical comparisons, key-based joins, scope filtering and applicability logic across different validation scenarios",
+
+        "Refactored overlapping and specialised validation methods into more generalised reusable implementations",
+
+        "Improved parameter validation and debugging so configuration errors were identified more accurately and unnecessary inputs were avoided",
+
+        "Developed Power Automate workflows for file processing, script execution, configuration handling and structured findings generation",
+
+        "Worked with SharePoint and OneDrive connectors and troubleshot file-access, path and permission issues within automated workflows",
+
+        "Maintained structured metadata covering validation rules, parameters, templates, trigger conditions, comparison settings, filters and source and target fields",
+
+        "Tested individual validation checks against representative reporting files and re-ran targeted and regression tests following changes",
+
+        "Investigated unexpected validation findings by comparing generated results against intended business rules and expected outputs",
+
+        "Worked with business and technical stakeholders to clarify requirements, resolve ambiguous validation logic and confirm expected results before implementation",
+
+        "Produced detailed technical handover documentation, user guidance and metadata definitions to support future maintenance and development",
+
+        "Created guidance for AI-assisted creation of future validation-rule metadata while maintaining structured requirements and validation processes"
+
+      ],
+
+      github: null,
+
+      date: "2026",
+
+      impact: "Demonstrates practical experience designing maintainable data-quality automation in an enterprise environment, combining software development, workflow automation, metadata-driven architecture, testing, debugging, requirements gathering and technical documentation."
+    },
+    {
+      id: 3,
+
+      title: "Enterprise AI & Snowflake Development",
+
+      category: "Enterprise AI / Data / Snowflake",
+
+      technologies: [
+        "Snowflake",
+        "Cortex",
+        "SQL",
+        "Python",
+        "Prompt Engineering",
+        "AI Workflows"
+      ],
+
+      shortDescription: "Developed and refined reusable enterprise AI skills and Snowflake workflows, gaining practical experience in AI development, data analysis, workflow design, testing and governance.",
+
+      fullDescription: "A collection of enterprise AI and Snowflake development work completed during my IT internship at Mediolanum. I developed and refined reusable AI skills for a range of internal data and workflow use cases, including dataset profiling, data-quality rule generation, data-lineage analysis, technical ticket triage and document automation. This involved designing prompts and workflows, defining inputs and outputs, testing behaviour, handling exceptions and establishing appropriate validation and human-review requirements. I also gained practical experience with Snowflake and Cortex, including working with verified queries and scheduled notebooks, while developing standards and reusable guidance for notebook and reporting workflows. Alongside development, I investigated the packaging, deployment and publication of AI skills, including permissions, discoverability and versioning. This provided practical experience of treating enterprise AI as a governed and maintainable software capability rather than simply a standalone AI tool.",
+
+      highlights: [
+
+        "Developed and refined reusable enterprise AI skills for data, analysis, technical support and workflow automation use cases",
+
+        "Worked with Snowflake and Cortex to explore practical enterprise AI and data workflows",
+
+        "Developed skills for dataset profiling and structured business data-dictionary generation",
+
+        "Created AI-assisted approaches for data-quality rule generation using mappings, schema information and reusable SQL patterns",
+
+        "Developed data-lineage analysis workflows designed to remain grounded in explicit technical definitions",
+
+        "Created an initial technical triage skill for development and bug-related tickets",
+
+        "Developed workflows for source-file data-quality assessment and structured reporting",
+
+        "Worked on AI-assisted document and email processing workflows, including input handling, matching, validation and controlled publication",
+
+        "Designed explicit inputs, deterministic outputs, guardrails, validation steps, fallback behaviour and human-review requirements for enterprise AI skills",
+
+        "Tested skill packaging, deployment and discoverability",
+
+        "Investigated permissions, administration dependencies and differences between personal and centrally published AI skills",
+
+        "Developed standards and reusable guidance for scheduled Snowflake notebooks and generated reports, including naming, ownership, scheduling, testing and output verification",
+
+        "Documented common failure modes involving permissions, shared workspaces, commits, paths, ownership and non-interactive execution",
+
+        "Gathered specialist feedback and incorporated it into AI skill definitions, Snowflake standards and supporting documentation"
+
+      ],
+
+      github: null,
+
+      date: "2026",
+
+      impact: "Demonstrates practical experience developing enterprise AI capabilities across data analysis, workflow automation and Snowflake, with additional experience in prompt and workflow design, testing, deployment, documentation and AI governance."
+    },
+    {
+      id: 4,
       title: "Pneumonia X-Ray Classification",
       category: "Deep Learning / Computer Vision",
       technologies: ["Python", "TensorFlow", "Keras", "scikit-learn", "NumPy", "matplotlib", "seaborn", "CNNs", "Grad-CAM", "EfficientNetB0"],
@@ -53,7 +167,7 @@ const projectsData = {
       impact: "Demonstrates deep learning, medical image classification, CNN experimentation, model evaluation, class imbalance handling, and explainable AI techniques for high-stakes healthcare-related computer vision tasks."
     },
     {
-      id: 3,
+      id: 5,
       title: "Heart Disease Prediction Model",
       category: "Machine Learning",
       technologies: ["Python", "scikit-learn", "Random Forest", "R", "pandas", "NumPy"],
@@ -72,7 +186,107 @@ const projectsData = {
       impact: "Demonstrates ability to build production-ready medical ML systems with explainable decisions and optimized patient experience through reduced testing requirements."
     },
     {
-      id: 4,
+      id: 6,
+
+      title: "Enterprise AI Usage & Credit Allocation Model",
+
+      category: "Data Analysis / AI Governance / Business Analytics",
+
+      technologies: [
+        "Cowork",
+        "Excel",
+        "Data Analysis"
+      ],
+
+      shortDescription: "Developed a repeatable data-driven model for allocating enterprise AI credits across departments and user groups based on observed usage patterns.",
+
+      fullDescription: "A data analysis and modelling project completed during my IT internship at Mediolanum to support a more consistent approach to allocating enterprise AI capacity. I analysed exported usage information alongside departmental and team mappings, segmented users according to usage profiles, and developed a repeatable allocation approach based on observed consumption. The model incorporated a minimum baseline allocation before proportionally distributing remaining capacity, allowing allocations to reflect usage patterns while maintaining a practical minimum for lower-usage groups. I produced team- and department-level outputs for review, refined the model when organisational mappings changed, and presented the methodology to senior IT stakeholders, incorporating their feedback. I also created internal guidance explaining how users could monitor their Cowork consumption and available credits using the platform's built-in reporting capabilities.",
+
+      highlights: [
+
+        "Analysed enterprise AI usage data alongside departmental and team mappings to inform resource allocation",
+
+        "Segmented users and teams according to observed usage profiles",
+
+        "Developed a repeatable allocation approach based on usage patterns, departmental groupings and user profiles",
+
+        "Introduced baseline allocations to prevent historically low usage from resulting in impractical limits",
+
+        "Proportionally redistributed remaining capacity after applying baseline allocations",
+
+        "Produced team and department level allocation outputs for review",
+
+        "Refined organisational mappings and allocation calculations when team structures changed",
+
+        "Presented the modelling approach and methodology to senior IT stakeholders",
+
+        "Incorporated stakeholder and governance feedback into the allocation model",
+
+        "Created guidance explaining how users could monitor completed Cowork consumption, remaining credits and team-level usage",
+
+        "Presented a practical guide of how to efficiently use cowork to business and technical users",
+
+        "Supported more transparent and structured management of enterprise AI resource usage"
+
+      ],
+
+      github: null,
+
+      date: "2026",
+
+      impact: "Demonstrates practical experience applying data analysis and modelling to a real enterprise resource-allocation problem, while also showing analytical reasoning, repeatable solution design, stakeholder communication and awareness of AI governance and responsible resource management."
+    },
+    {
+      id: 7,
+
+      title: "Snowflake Snowday & AI Hackathon",
+
+      category: "AI / Snowflake / Project Coordination",
+
+      technologies: [
+        "Snowflake",
+        "Cortex",
+        "Semantic Views",
+        "SQL",
+        "AI Agents"
+      ],
+
+      shortDescription: "Helped organise and deliver a two-day Snowflake learning event and AI hackathon, supporting cross-functional teams from challenge design through development and final presentations.",
+
+      fullDescription: "A two-day Snowflake learning event and AI hackathon organised to bring together business, data and technical teams to develop practical AI prototypes. I played a central coordination role across the planning, delivery and judging process, while also contributing to the technical design of the challenges. I reviewed existing AI use cases and converted suitable ideas into clearly scoped hackathon challenges, defining intended users, minimum viable prototypes, approved data sources, validation requirements, governance considerations and expected outcomes. During the event, I coordinated participants and cross-functional teams, managed meeting schedules and changes, supported mentors and judges, and helped teams throughout their development sessions. The event concluded with a final presentation and judging session, where teams demonstrated prototypes using technologies including Snowflake semantic views, natural-language interfaces, verified queries and AI-assisted workflows.",
+
+      highlights: [
+
+        "Helped organise and deliver a two-day Snowflake Snowday and AI Hackathon for mixed business, data and technical audiences",
+
+        "Coordinated participants and cross-functional teams, including team assignments, meeting schedules, communications and late changes",
+
+        "Supported the coordination of mentors, technical contacts, judges and final presentation logistics",
+
+        "Reviewed existing AI use cases and transformed suitable ideas into practical, scoped hackathon challenges",
+
+        "Created detailed challenge materials covering the business problem, intended users, minimum viable prototype, scope, approved sources and suggested build approach",
+
+        "Defined validation evidence, governance constraints, expected presentation content and potential next steps within challenge documentation",
+
+        "Supported teams throughout development sessions and helped coordinate the transition from implementation to judging and final presentations",
+
+        "Developed a scoring framework covering business relevance, metric and mapping quality, usefulness, explanation, validation evidence, demonstration quality and governance",
+
+        "Supported hybrid participation and live event changes across multiple parallel team sessions",
+
+        "Worked across technical and business perspectives to help turn broad AI ideas into focused, testable prototype challenges"
+
+      ],
+
+      github: null,
+
+      date: "2026",
+
+      impact: "Demonstrates experience combining technical AI knowledge with project coordination, requirements definition, cross-functional communication and event delivery, while gaining practical exposure to Snowflake-based AI prototyping and enterprise use-case development."
+    },
+    {
+      id: 8,
       title: "Chat Sentiment Analysis Classifier",
       category: "Machine Learning / NLP",
       technologies: ["Python", "scikit-learn", "pandas", "NumPy", "TF-IDF", "LinearSVC", "GridSearchCV", "KMeans", "NetworkX", "WordCloud", "matplotlib", "seaborn", "Jupyter Notebook"],
@@ -94,7 +308,7 @@ const projectsData = {
       impact: "Demonstrates applied NLP, data science experimentation, and ML engineering pipeline development, with emphasis on preprocessing decisions, feature selection, model evaluation, and interpretable performance improvement."
     },
     {
-      id: 5,
+      id: 9,
       title: "Jenkins CI/CD Pipeline for FastAPI",
       category: "DevOps / MLOps Foundations",
       technologies: ["Python", "FastAPI", "Jenkins", "Docker", "Postman", "Uvicorn", "Pytest", "REST APIs", "CI/CD"],
@@ -113,7 +327,7 @@ const projectsData = {
       impact: "Demonstrates practical CI/CD, API testing, containerisation, and deployment workflow knowledge relevant to ML engineering and MLOps roles."
     },
     {
-      id: 6,
+      id: 10,
       title: "O-Ring Fault Detection System",
       category: "Computer Vision",
       technologies: ["Python", "OpenCV", "NumPy", "matplotlib", "Jupyter Notebook"],
@@ -132,7 +346,7 @@ const projectsData = {
       impact: "Demonstrates practical understanding of computer vision fundamentals, algorithm design, and interpretable rule-based image inspection without relying on black-box deep learning models."
     },
     {
-      id: 7,
+      id: 11,
       title: "ThreadUD - Academic Forum Platform",
       category: "Full-Stack Development",
       technologies: ["React Native", "Node.js", "Express", "MongoDB", "Socket.io"],
@@ -151,7 +365,7 @@ const projectsData = {
       impact: "Provides students with a platform for peer learning and academic discussion, with robust safety features ensuring appropriate content."
     },
     {
-      id: 8,
+      id: 12,
       title: "Zombie Apocalypse Simulation - HPC Project",
       category: "High-Performance Computing",
       technologies: ["C", "Pthreads", "Parallel Computing", "Mathematical Modeling"],
@@ -170,7 +384,7 @@ const projectsData = {
       impact: "Demonstrates practical application of parallel computing techniques to improve computational performance in simulation-based modeling."
     },
     {
-      id: 9,
+      id: 13,
       title: "Distributed Server Network",
       category: "Distributed Systems",
       technologies: ["Python", "JSON-RPC", "Network Programming", "System Design"],
@@ -189,7 +403,7 @@ const projectsData = {
       impact: "Demonstrates practical knowledge of distributed systems design, network protocols, and building resilient, fault-tolerant systems."
     },
     {
-      id: 10,
+      id: 14,
       title: "Natural Language Parser",
       category: "Computational Linguistics",
       technologies: ["Java", "Recursive Algorithms", "Tree Data Structures", "OOP"],
@@ -208,7 +422,7 @@ const projectsData = {
       impact: "Demonstrates foundational NLP concepts and compiler design principles applicable to language processing systems, syntax checkers, and automated grammar correction tools."
     },
     {
-      id: 11,
+      id: 15,
       title: "Huffman Encoding System",
       category: "Algorithms & Data Structures",
       technologies: ["Java", "Swing", "Data Structures", "Algorithm Design"],
@@ -234,6 +448,93 @@ const experienceData = {
   experiences: [
     {
       id: 1,
+
+      title: "IT Intern",
+
+      company: "Mediolanum",
+
+      period: "29 June 2026 – 28 August 2026",
+
+      location: "Ireland",
+
+      type: "Internship",
+
+      shortDescription: "Worked within the IT team across automation, data and reporting, enterprise AI, Snowflake and technical project delivery.",
+
+      fullDescription: "Worked as an IT intern within the IT team at Mediolanum, contributing to projects across automation, data and reporting, enterprise AI and Snowflake. My work involved developing technical solutions, analysing data, working with business and technical stakeholders, testing and refining workflows, and producing documentation and handover material. Alongside larger projects in data validation, enterprise AI, Snowflake and Cowork, I contributed to smaller workflow automation tasks, technical standards and internal guidance.",
+
+      responsibilities: [
+
+        "Developed automation and data-validation solutions using Excel, Office Scripts and Power Automate, focusing on reusable and maintainable workflows",
+
+        "Worked with SharePoint and OneDrive file workflows, troubleshooting file processing, path and access issues within automated processes",
+
+        "Developed and refined enterprise AI skills and workflows using Snowflake and Cortex, including data profiling, data-quality, data-lineage, technical triage and workflow automation use cases",
+
+        "Designed and tested AI workflows with defined inputs, outputs, validation requirements, guardrails and human-review considerations",
+
+        "Worked on AI skill packaging, deployment, permissions and catalogue publication, gaining experience with the practical governance of enterprise AI capabilities",
+
+        "Developed standards and guidance for scheduled Snowflake notebooks and reporting workflows, including naming, ownership, scheduling, testing and output verification",
+
+        "Developed a repeatable Cowork allocation approach based on usage patterns, departmental groupings and user profiles, and presented the methodology to senior IT stakeholders",
+
+        "Contributed to the organisation and delivery of a two-day Snowflake Snowday and AI Hackathon, coordinating participants, teams, mentors, judges and event logistics",
+
+        "Supported the development of technical challenge materials for AI use cases, helping translate broad ideas into clearly scoped and testable prototypes",
+
+        "Worked with business users and technical stakeholders to gather requirements, clarify ambiguous requirements and validate expected outputs",
+
+        "Tested solutions against representative data, investigated unexpected results and incorporated feedback into subsequent development",
+
+        "Produced technical documentation, user guides, metadata definitions, internal wiki content and project handover materials to support future maintenance and knowledge sharing"
+
+      ],
+
+      technologies: [
+        "Excel",
+        "Office Scripts",
+        "Power Automate",
+        "Snowflake",
+        "Cortex",
+        "Cowork",
+        "Power BI",
+        "SQL",
+        "Git Hub"
+      ],
+
+      achievements: [
+
+        "Developed a substantial metadata-driven data validation and automation framework using Excel, Office Scripts and Power Automate",
+
+        "Gained practical experience developing and governing reusable enterprise AI capabilities using Snowflake and Cortex",
+
+        "Helped organise and deliver a two-day Snowflake Snowday and AI Hackathon involving cross-functional business and technical teams",
+
+        "Developed a repeatable data-driven approach to enterprise AI credit allocation and presented the methodology to senior IT stakeholders",
+
+        "Produced comprehensive technical and user documentation to support project handover, maintenance and future development"
+
+      ],
+
+      skills: [
+        "Data Automation",
+        "Data Quality",
+        "Enterprise AI",
+        "Snowflake & Cortex",
+        "Power Automate",
+        "Data Analysis",
+        "Workflow Development",
+        "Requirements Gathering",
+        "Stakeholder Communication",
+        "Testing & Debugging",
+        "Technical Documentation",
+        "AI Governance",
+        "Business & Technical Collaboration"
+      ]
+    },
+    {
+      id: 2,
       title: "Software Development Intern",
       company: "Binary Worrier Ltd.",
       period: "Summer 2025",
@@ -257,7 +558,7 @@ const experienceData = {
       skills: ["Desktop Application Development", "API Integration", "Healthcare Technology", "Agile Development"]
     },
     {
-      id: 2,
+      id: 3,
       title: "Student Tutor",
       company: "TU Dublin",
       period: "2024",
@@ -280,7 +581,7 @@ const experienceData = {
       skills: ["Teaching", "Communication", "Java Programming", "Mentoring", "Content Creation"]
     },
     {
-      id: 3,
+      id: 4,
       title: "LC Grinds Tutor",
       company: "Self-Employed",
       period: "2025",
@@ -368,15 +669,15 @@ const HeroSection = ({ darkMode, setCurrentView }) => (
     <div className="max-w-4xl text-center">
       <div className="mb-6">
         <span className={`inline-block px-4 py-2 ${darkMode ? 'bg-blue-900/50 text-blue-400' : 'bg-blue-50 text-blue-600'} rounded-full text-sm font-medium mb-4`}>
-          👋 Welcome to my portfolio
+          👋 Data Science & AI Portfolio
         </span>
       </div>
       <h1 className={`text-6xl font-bold mb-6 leading-tight ${darkMode ? 'text-white' : ''}`}>
         Hi, I'm <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">David Thornton</span>
       </h1>
       <p className={`text-xl ${darkMode ? 'text-gray-300' : 'text-gray-600'} mb-8 max-w-2xl mx-auto leading-relaxed`}>
-        Fourth-year Computing student passionate about data science, machine learning, and AI.
-        Building intelligent, scalable systems through full-stack development and distributed computing.
+        MSc Advanced AI student focused on data science, machine learning, and applied AI.
+        Building practical solutions across machine learning, computer vision, enterprise AI, and data automation.
       </p>
       <div className="flex gap-4 justify-center">
         <a
@@ -407,13 +708,12 @@ const AboutSection = ({ darkMode }) => (
       <div className="grid md:grid-cols-2 gap-12 mb-16">
         <div>
           <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed mb-6`}>
-            Fourth-year Computing student with a passion for data science, machine learning, and artificial intelligence.
-            Experienced in data analytics, computer vision systems, full-stack development, distributed computing, and high-performance computing through academic
-            projects, professional internships, and tutoring roles.
+            I am an MSc Advanced AI student with a strong interest in data science, machine learning, computer vision, and applied artificial intelligence. 
+            I recently completed a BSc in Computing at TU Dublin, where I developed experience in machine learning research, deep learning, computer vision, and explainable AI.
           </p>
           <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed`}>
-            Seeking a graduate program in data science and AI to further develop expertise in building intelligent,
-            scalable systems that solve real-world problems.
+            Through academic projects and professional experience, I have worked on machine learning systems, data analysis, automation, enterprise AI, and software development. 
+            I enjoy applying analytical and technical approaches to real-world problems, with a particular interest in developing practical AI and data-driven solutions.
           </p>
         </div>
 
@@ -423,22 +723,29 @@ const AboutSection = ({ darkMode }) => (
             <div className="flex items-center gap-3">
               <GraduationCap className="w-5 h-5 text-blue-600" />
               <div>
+                <p className={`font-semibold ${darkMode ? 'text-white' : ''}`}>UCD</p>
+                <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>MSc Advanced Artificial Intelligence | 2026–2027</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <GraduationCap className="w-5 h-5 text-blue-600" />
+              <div>
                 <p className={`font-semibold ${darkMode ? 'text-white' : ''}`}>TU Dublin</p>
-                <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>BSc Computing (IT) | GPA: 3.96</p>
+                <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>BSc Computing (IT) | First Class Honours | GPA: 4.0</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <Briefcase className="w-5 h-5 text-blue-600" />
+              <div>
+                <p className={`font-semibold ${darkMode ? 'text-white' : ''}`}>Mediolanum</p>
+                <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>IT Intern | Summer 2026</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
               <Briefcase className="w-5 h-5 text-blue-600" />
               <div>
                 <p className={`font-semibold ${darkMode ? 'text-white' : ''}`}>Binary Worrier Ltd.</p>
-                <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Software Development Intern</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-3">
-              <Award className="w-5 h-5 text-blue-600" />
-              <div>
-                <p className={`font-semibold ${darkMode ? 'text-white' : ''}`}>Kaggle Certified</p>
-                <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>ML & Computer Vision</p>
+                <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Software Development Intern | Summer 2025</p>
               </div>
             </div>
           </div>
@@ -447,21 +754,26 @@ const AboutSection = ({ darkMode }) => (
 
       <div>
         <h3 className={`text-2xl font-bold mb-6 ${darkMode ? 'text-white' : ''}`}>Technical Skills</h3>
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-4 gap-5">
           <div className={`p-6 ${darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-gray-200'} rounded-xl border hover:shadow-lg transition-shadow`}>
             <Code className="w-8 h-8 text-blue-600 mb-4" />
-            <h4 className={`font-bold mb-2 ${darkMode ? 'text-white' : ''}`}>Languages</h4>
-            <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>Python, Java, C, R, Node.js, SQL, MongoDB, C#</p>
+            <h4 className={`font-bold mb-2 ${darkMode ? 'text-white' : ''}`}>Machine Learning</h4>
+            <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>Python, PyTorch, TensorFlow, scikit-learn, pandas, NumPy</p>
           </div>
           <div className={`p-6 ${darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-gray-200'} rounded-xl border hover:shadow-lg transition-shadow`}>
             <Code className="w-8 h-8 text-purple-600 mb-4" />
-            <h4 className={`font-bold mb-2 ${darkMode ? 'text-white' : ''}`}>Frameworks</h4>
-            <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>PyTorch, TensorFlow, Scikit-Learn, React Native, Express.js, .NET, .NET MAUI</p>
+            <h4 className={`font-bold mb-2 ${darkMode ? 'text-white' : ''}`}>Data & Analytics</h4>
+            <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>Python, R, SQL, Data Analysis, Data Quality, Data Visualisation</p>
           </div>
           <div className={`p-6 ${darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-gray-200'} rounded-xl border hover:shadow-lg transition-shadow`}>
             <Code className="w-8 h-8 text-pink-600 mb-4" />
-            <h4 className={`font-bold mb-2 ${darkMode ? 'text-white' : ''}`}>Specializations</h4>
-            <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>ML, Computer Vision, HPC, Distributed Systems, Full-Stack Development</p>
+            <h4 className={`font-bold mb-2 ${darkMode ? 'text-white' : ''}`}>AI & Computer Vision</h4>
+            <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>Deep Learning, Computer Vision, Explainable AI, Enterprise AI, Snowflake Cortex</p>
+          </div>
+          <div className={`p-6 ${darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-gray-200'} rounded-xl border hover:shadow-lg transition-shadow`}>
+            <Code className="w-8 h-8 text-pink-600 mb-4" />
+            <h4 className={`font-bold mb-2 ${darkMode ? 'text-white' : ''}`}>Engineering & Automation</h4>
+            <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>Power Automate, Office Scripts, Excel, Git, Docker, Azure DevOps, Distributed Systems</p>
           </div>
         </div>
       </div>
