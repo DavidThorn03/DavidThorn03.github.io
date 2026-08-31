@@ -1001,15 +1001,17 @@ const ProjectModal = ({ project, onClose, darkMode }) => {
           </div>
 
           <div className="flex gap-4">
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-medium hover:shadow-lg transition-all"
-            >
-              <Github className="w-5 h-5" />
-              View on GitHub
-            </a>
+            {project.github && (
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-medium hover:shadow-lg transition-all"
+              >
+                <Github className="w-5 h-5" />
+                View on GitHub
+              </a>
+            )}
             <span className={`flex items-center gap-2 ${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>
               <Calendar className="w-4 h-4" />
               {project.date}
